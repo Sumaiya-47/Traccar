@@ -10,9 +10,14 @@ export const customerPage = '//div[@role="menuitem"]//span[@class="ant-menu-titl
 // customerLocators
 export const customerNameInput = 'input[name="customer_name"]'; 
 export const customerAddBtn = '//button[contains(text(), "Add Customer")]';
-export const customerCategoryDropdown = 'div.css-1wa3eu0-placeholder'; 
-export const customerCategoryInput = '//input[@id="react-select-2-input"]'; 
+// export const customerCategoryDropdown = 'div.css-1wa3eu0-placeholder'; 
+// export const customerCategoryInput = '//input[@id="react-select-2-input"]'; 
+// export const customerCategoryOption = (category) => `//div[contains(@class, "css-1uccc91-singleValue") and text()="${category}"]`;
+// Updated selector for Customer Category dropdown
+export const customerCategoryDropdown = '//div[contains(@class, "css-1hwfws3")]'; 
 export const customerCategoryOption = (category) => `//div[contains(@class, "css-1uccc91-singleValue") and text()="${category}"]`;
+export const customerCategoryDropdownVisibleOption = (category) => `//div[@class=" css-1uccc91-singleValue" and text()="${category}"]`;
+
 
 export const customerRelationDropdown = 'div.css-1wa3eu0-placeholder'; 
 export const descriptionTextarea = 'textarea[name="desc"]';
